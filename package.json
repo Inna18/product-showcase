@@ -11,7 +11,7 @@
     "predeploy": "vite build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://Inna18.github.io/product-showcase",
+  "homepage": "https://inna18.github.io/product-showcase",
   "dependencies": {
     "@react-three/drei": "^10.6.1",
     "@react-three/fiber": "^9.3.0",
