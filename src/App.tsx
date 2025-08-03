@@ -5,7 +5,7 @@ import ProductItem from './pages/ProductItem';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/product-showcase">
       <Routes>
         <Route path="/" element={<ProductList />} />
         <Route path="/product/*" element={<ProductItem />} />
