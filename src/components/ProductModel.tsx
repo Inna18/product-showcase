@@ -6,9 +6,10 @@ interface Props {
   color: string;
 }
 const ProductModel = ({ item, color }: Props) => {
-  const { scene, materials } = useGLTF(`/${item}`, true);
+  const { scene, materials } = useGLTF(import.meta.env.BASE_URL + item, true);
 
   useEffect(() => {
+    console.log(item);
     if (item.includes('nike')) {
       if (materials['nike_logga']) {
         materials['nike_logga'].color.set(color);

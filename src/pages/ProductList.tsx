@@ -27,7 +27,7 @@ const ProductList = () => {
   ]);
 
   const handleShowItem = (url: string) => {
-    navigate(`/product${url}`);
+    navigate(`/product-showcase/product${url}`);
   };
 
   return (

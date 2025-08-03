@@ -7,8 +7,8 @@ import Overlay from '../components/Overlay';
 
 const ProductItem = () => {
   const location = useLocation();
-  const fullPath = location.pathname; // e.g. "/product/models/nike.glb"
-  const url = fullPath.replace('/product/', ''); // "models/nike.glb"
+  const fullPath = location.pathname; // e.g. "/product-showcase/product/models/nike.glb"
+  const url = fullPath.replace('/product-showcase/product/', ''); // "models/nike.glb"
 
   const [color, setColor] = useState<string>('#FFFFFF');
   const [item, setItem] = useState<string>('');
@@ -28,6 +28,9 @@ const ProductItem = () => {
         <ContactShadows position={[0, -1.2, 0]} opacity={0.4} />
       </Canvas>
       <Overlay item={item} onColorChange={setColor} />
+      <div className="description">
+        
+      </div>
     </div>
   );
 };
